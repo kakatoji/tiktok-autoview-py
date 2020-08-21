@@ -5,3 +5,6 @@
 
 ## JavaScript ver
 [**JavaScript**](https://github.com/kangoka/tiktok-autoviews)
+
+## Tik Tok Auto Views V2
+[**Python**](https://github.com/kangoka/tiktok-autoviewsv2-py)
