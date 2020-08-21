@@ -24,7 +24,7 @@ def loop():
     else:
         driver.find_element_by_xpath("/html/body/div[2]/div[2]/div[1]/fieldset/div/div/a[2]").click()
         time.sleep(1)
-        driver.get("https://fireliker.com/autoviews.php")
+        driver.get("https://fireliker.com/autoViews.php")
         time.sleep(3)
         select = Select(driver.find_element_by_xpath("//*[@id=\"select\"]"))
         select.select_by_visible_text("1000 VIEWS")
@@ -35,9 +35,9 @@ def loop():
 
 def login():
     driver.get("https://fireliker.com/welcome.php")
-    time.sleep(1)
-    if ifExist("//input[@name=\"username\"]"):
-        driver.find_element_by_xpath("//input[@name=\"username\"]").send_keys(username)
+    time.sleep(22) //Anticipate to cloudflare check
+    if ifExist("/html/body/div[2]/div[2]/div/form/fieldset/div[1]/div/input"]"):
+        driver.find_element_by_xpath("/html/body/div[2]/div[2]/div/form/fieldset/div[1]/div/input").send_keys(username)
         time.sleep(1)
         driver.find_element_by_xpath('//button[@type="submit"]').click()
         time.sleep(1)
